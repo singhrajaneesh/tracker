@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cell_height"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cell_height"
+        android:layout_toRightOf="@+id/image"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/cell_space_right"
+        android:id="@+id/linearLayout">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="@dimen/cell_space_left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#590101"
+        android:textStyle="bold"
+        android:textSize="@dimen/label_text"
+        android:layout_centerVertical="true"
+        android:id="@+id/txtViewTitle"
+        >
+    </TextView>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/cell_space_right"
+        android:layout_height="@dimen/cell_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/cell_total_width"
+        android:textColor="#590101"
+        android:textStyle="bold"
+        android:textSize="@dimen/label_text"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:id="@+id/txtViewDescription"
+
+        >
+    </TextView>
+    <ImageView
+        android:id="@+id/imgViewLogo"
+        android:layout_width="@dimen/arrow_image_height"
+        android:layout_height="@dimen/arrow_image_height"
+        android:layout_gravity="center_vertical"
+        android:src ="@drawable/arrow">
+    </ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

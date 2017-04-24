@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#590101"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_height="@dimen/back_button_height"
+            android:layout_width="@dimen/back_button_width"
+            android:layout_marginLeft="@dimen/back_button_layoutleft"
+            android:paddingLeft="@dimen/back_button_paddingleft"
+            android:text ="Back"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/second_label_text"
+            android:background="@drawable/arrow_shape"
+            />
+        <TextView android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/label_text"
+            />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/height"
+        android:background="#FFFFFF"
+        android:id="@+id/mylayout1">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/bottom_button_height"
+            android:background="#FFFFFF"
+            android:id="@+id/mylayout">
+            </RelativeLayout>>
+       <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_button_height"
+            android:orientation="horizontal"
+            android:background="#590101"
+            android:layout_alignParentBottom = "true"
+            android:id="@+id/bottom">
+           <ImageButton
+               android:id="@+id/backwardbutton"
+               android:layout_width="@dimen/bottom_button_width"
+               android:layout_height="@dimen/bottom_button_height"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="5dp"
+               android:layout_alignParentLeft = "true"
+               android:background="#590101"
+               android:src="@drawable/backward"
+               />
+           <ImageButton
+               android:id="@+id/forwardbutton"
+               android:layout_width="@dimen/bottom_button_width"
+               android:layout_height="@dimen/bottom_button_height"
+               android:layout_marginTop="0dp"
+               android:layout_marginLeft="5dp"
+               android:layout_toRightOf="@+id/backwardbutton"
+               android:background="#590101"
+               android:src="@drawable/forward"
+               />
+           <Button
+               android:id="@+id/gobutton"
+               android:layout_width="@dimen/bottom_button_width"
+               android:layout_height="@dimen/bottom_button_height"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/roundcorner"
+               android:textSize="@dimen/first_label_text"
+               android:textStyle=""
+               android:textColor="#ffffff"
+               />
+           <TextView android:id="@+id/pageno"
+               android:paddingTop="3dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:paddingRight="@dimen/pageno_space_right"
+               android:textColor="#FFFFFF"
+               android:textSize="@dimen/first_label_text"
+               />
+           <TextView android:id="@+id/totalpage"
+               android:paddingTop="3dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:paddingRight="10dp"
+               android:textColor="#FFFFFF"
+               android:textSize="@dimen/first_label_text"
+               />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+        <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webView1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height"
+            />
+
+       </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.jainpuja.androidmusicplayer_ver2.middle"
+    android:background="#590101">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_height="@dimen/back_button_height"
+            android:layout_width="@dimen/back_button_width"
+            android:layout_marginLeft="@dimen/back_button_layoutleft"
+            android:paddingLeft="@dimen/back_button_paddingleft"
+            android:text ="Back"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/second_label_text"
+            android:background="@drawable/arrow_shape"
+            />
+    <TextView android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_size"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    </RelativeLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/siddhakshetraScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/height"
+        android:layout_marginBottom="0dp"
+        >
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:background="@drawable/top" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <Button
+                android:id="@+id/siddha"
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/sammed_shikar" />
+            <Button
+                android:id="@+id/kalyanak"
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/space_left"
+                android:background="@drawable/kundalpur" />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView android:id="@+id/siddhalabel"
+                android:layout_width="@dimen/heading_label_width"
+                android:layout_height="wrap_content"
+                android:textColor="#590101"
+                android:textSize="@dimen/label_text"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Siddha Kshetra"
+                />
+
+            <TextView android:id="@+id/kalyanaklabel"
+                android:layout_width="@dimen/heading_label_width"
+                android:layout_height="wrap_content"
+                android:textColor="#590101"
+                android:textSize="@dimen/label_text"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/heading_label_space"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Kalyanak Kshetra"
+                />
+        </LinearLayout>
+           <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:orientation="horizontal"
+               android:paddingTop="50dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_centerHorizontal="true"
+               >
+               <Button
+                   android:id="@+id/atishay"
+                   android:layout_width="@dimen/button_height"
+                   android:layout_height="@dimen/button_height"
+                   android:background="@drawable/tijaraji" />
+           </LinearLayout>
+           <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_centerHorizontal="true"
+               >
+               <TextView android:id="@+id/atishaylabel"
+                   android:layout_width="@dimen/heading_label_width"
+                   android:layout_height="wrap_content"
+                   android:textColor="#590101"
+                   android:textSize="@dimen/label_text"
+                   android:textStyle="bold"
+
+                   android:layout_marginTop="5dp"
+                   android:gravity="center_horizontal"
+                   android:text="Atishay Kshetra"
+                   />
+           </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Videoscroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/height"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_height"
+                android:background="@drawable/top"
+                android:baselineAlignBottom="true" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                >
+                <Button
+                    android:id="@+id/Jainvideo"
+                    android:layout_width="@dimen/button_height"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/video_song" />
+                <Button
+                    android:id="@+id/Jainmuni"
+                    android:layout_width="@dimen/button_height"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:background="@drawable/muni_pravachan" />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                >
+                <TextView android:id="@+id/jainvideolabel"
+                    android:layout_width="@dimen/heading_label_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="#590101"
+                    android:textSize="@dimen/label_text"
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Jain Videos"
+                    />
+                <TextView android:id="@+id/Jainmunilabel"
+                    android:layout_width="@dimen/heading_label_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="#590101"
+                    android:textSize="@dimen/label_text"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/heading_label_space"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Muni Pravachan"
+                    />
+            </LinearLayout>
+            <!--<ImageView-->
+                <!--android:src="@drawable/bottom"-->
+                <!--android:paddingTop="550dp"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="0dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--/>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#590101"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".home">
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_size"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Jain Puja" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height"
+        android:onClick="clickme"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

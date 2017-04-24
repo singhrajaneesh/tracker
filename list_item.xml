@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/image_height"
+    android:orientation="horizontal">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/image_height"
+        android:orientation="horizontal">
+        <!--Image view to show thumbnail image-->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/thumb_height"
+            android:layout_height="@dimen/thumb_height"
+            android:src ="@drawable/jainpuja"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/cell_space_left"
+            >
+        </ImageView>
+        <!--Text view to show english name-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thumb_height"
+            android:layout_toRightOf="@+id/image"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/cell_space_right"
+            android:id="@+id/linearLayout">
+            <!--Text view to show hindi name-->
+            <TextView
+                android:id="@+id/hinname"
+                android:layout_marginLeft="@dimen/cell_space_left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#590101"
+                android:textStyle="bold"
+                android:textSize="@dimen/label_text"
+
+                />
+            <TextView
+                android:id="@+id/engname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cell_space_left"
+                android:layout_marginTop="@dimen/space_cell_text"
+                android:textColor="#590101"
+                android:textStyle="bold"
+                android:textSize="@dimen/label_text"
+            />
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="@dimen/cell_space_right"
+            android:layout_height="@dimen/thumb_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout3">
+        <!--Text view to show total bhajan-->
+        <TextView
+            android:id="@+id/totalbhajan"
+            android:layout_width="@dimen/cell_total_width"
+            android:layout_height="wrap_content"
+            android:textColor="#590101"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/second_label_text"
+            >
+        </TextView>
+        <!--Image view to show arrow image -->
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_toRightOf="@+id/totalbhajan"
+            android:layout_width="@dimen/arrow_image_height"
+            android:layout_height="@dimen/arrow_image_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/arrow"
+            >
+        </ImageView>
+
+        </LinearLayout>
+       </RelativeLayout>
+  </LinearLayout>
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentRight="true"-->
