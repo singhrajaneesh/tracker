@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#590101"
+    tools:context="com.jainpuja.androidmusicplayer_ver2.Jinwani">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:layout_marginTop="0dp">
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_height="@dimen/back_button_height"
+            android:layout_width="@dimen/back_button_width"
+            android:layout_marginLeft="@dimen/back_button_layoutleft"
+            android:paddingLeft="@dimen/back_button_paddingleft"
+            android:text ="Back"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/second_label_text"
+            android:background="@drawable/arrow_shape"
+            />
+        <TextView android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/label_text"
+            />
+       </RelativeLayout>
+        <ListView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:id="@+id/listView3"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/background"
+            android:divider="#e6c7ae"
+            android:dividerHeight="2dp"
+            />
+
+</LinearLayout>
